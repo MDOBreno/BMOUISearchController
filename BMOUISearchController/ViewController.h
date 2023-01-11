@@ -7,7 +7,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UISearchResultsUpdating>
+
+
+@property (weak, nonatomic) IBOutlet UIView *searchContainerView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
 @end
